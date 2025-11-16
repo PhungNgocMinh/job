@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('Image/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: mojangles, Arial, sans-serif;
+  color: white;
+  padding: 25px 0px 0px 25px;
+}
+
+.blur {
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+}
+
+@font-face {
+  font-family: mojangles;
+  src: url(mojangles/mojangles.otf);
+}
+
+@keyframes blink_rainbow {
+  0% {
+    color: red;
+  }
+  25% {
+    color: green;
+  }
+  50% {
+    color: blue;
+  }
+  75% {
+    color: pink;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.rainbow_text {
+  animation: blink_rainbow 2s linear infinite;
+}
+
+.header {
+  color: rgb(224, 64, 104);
+}
+
+.avatar {
+  width: 500px;
+  height: 400px;
+}
